@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Me - Mayur Gajghate</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet"/>
+<style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #121212;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    .topnav {
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 1000;
+      display: flex;
+      gap: 20px;
+      padding: 15px 30px;
+      background-color: rgba(18,18,18,0.8);
+      backdrop-filter: blur(5px);
+    }
+
+    .topnav a {
+      color: #ff5252;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .topnav a:hover {
+      color: #fff;
+    }
+
+    header {
+      padding: 100px 20px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #ff5252;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .contact-container {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 30px;
+      background-color: #1e1e1e;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    input, textarea {
+      padding: 12px 15px;
+      background: #2b2b2b;
+      border: 1px solid #444;
+      border-radius: 8px;
+      color: #fff;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #ff5252;
+      background-color: #1e1e1e;
+      outline: none;
+    }
+
+    button {
+      background-color: #ff5252;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ff6a6a;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<nav class="topnav">
+<a href="home_page_animated.html">Home <i class="fa fa-home"></i></a>
+<a href="about_me_page.html">About <i class="fa fa-user"></i></a>
+<a href="my_work_page.html">Projects <i class="fa fa-suitcase"></i></a>
+<a href="Skills_page.html">Skills <i class="fa fa-inbox"></i></a>
+<a href="certifications_page.html">Certificate <i class="fa fa-inbox"></i></a>
+<a href="contact_me_page.html">Contact <i class="fa fa-inbox"></i></a>
+</nav>
+<header data-aos="fade-down">
+<h1>Contact Me</h1>
+<p>If you're interested in working together or have any questions, feel free to reach out!</p>
+</header>
+<section class="contact-container" data-aos="zoom-in" style="display: flex; gap: 30px; justify-content: space-between; flex-wrap: wrap;">
+
+<div class="contact-info" data-aos="fade-left" style="flex: 1; min-width: 250px;">
+<h2 style="color: #ff5252;">Connect With Me</h2>
+<p style="color: #ccc;"><img src="https://img.icons8.com/fluency/24/phone.png"/> <strong>Phone:</strong> +91-9511885986</p>
+<p style="color: #ccc;"><img src="https://img.icons8.com/fluency/24/gmail.png"/> <strong>Email:</strong> mayurgajghate99@gmail.com</p>
+<p><a href="https://www.linkedin.com/in/mayurgajghate" style="color: #ff5252;" target="_blank"><img src="https://img.icons8.com/color/24/linkedin.png"/> LinkedIn</a></p>
+<p><a href="https://www.instagram.com/mayur.gajghate" style="color: #ff5252;" target="_blank"><img src="https://img.icons8.com/color/24/instagram-new--v1.png"/> Instagram</a></p>
+<p><a href="https://wa.me/919511885986" style="color: #ff5252;" target="_blank"><img src="https://img.icons8.com/color/24/whatsapp--v1.png"/> WhatsApp</a></p>
+<p><a href="https://twitter.com/mayur_gajghate" style="color: #ff5252;" target="_blank"><img src="https://img.icons8.com/color/24/twitter.png"/> Twitter</a></p>
+</div>
+<form action="https://formspree.io/f/your-form-id" method="POST" style="flex: 1; min-width: 250px;">
+<input name="name" placeholder="Your Name" required="" type="text"/>
+<input name="email" placeholder="Your Email" required="" type="email"/>
+<textarea name="message" placeholder="Your Message" required="" rows="5"></textarea>
+<button type="submit">Send Message</button>
+</form>
+</section>
+<footer>
+  © 2025 Mayur Gajghate. All rights reserved.
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({ duration: 1500, once: true });
+</script>
+</body>
+</html>
